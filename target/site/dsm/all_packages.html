@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="ROBOTS" content="index,follow" />
+<meta name="TITLE" content="" />
+<meta name="DESCRIPTION" content="" />
+<meta name="KEYWORDS" content="" />
+<meta name="AUTHOR" content="" />
+<meta name="Copyright" content="" />
+<meta http-equiv="Content-Language" content="en" />
+<style type="text/css">
+@import url(css/style.css);
+</style>
+</head>
+<body>
+	<h1>
+		DSM Report - 
+		<img src="./images/package.png" alt="" class="" />
+		<a href="./all_packages.html" title="" target="summary" class="">all_packages</a>
+	</h1>
+	<table cellspacing="0" cellpadding="0">
+		<tr>
+			<td></td>
+			<td></td> 
+			<td class="packageName_cols" title="edu.gordon">1</td> 
+			<td class="packageName_cols" title="edu.gordon.sidecar">2</td> 
+			<td class="packageName_cols" title="edu.gordon.view">3</td> 
+			<td class="packageName_cols" title="edu.gordon.logic">4</td> 
+			<td class="packageName_cols" title="edu.gordon.sidecar.simulation">5</td> 
+			<td class="packageName_cols" title="edu.gordon.data">6</td> 
+		</tr>
+
+
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.html" title="edu.gordon" target="" class=""> 
+						edu.gordon 
+					</a>
+					(1)
+				</td>
+				<td class="packageNumber_rows">
+					1
+				</td>
+
+
+							<th title="edu.gordon uses edu.gordon">
+								x
+							</th>
+						<th>
+							
+						</th>
+						<th>
+							
+						</th>
+						<th>
+							
+						</th>
+						<th>
+							
+						</th>
+						<th>
+							
+						</th>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.sidecar.html" title="edu.gordon.sidecar" target="" class=""> 
+						edu.gordon.sidecar 
+					</a>
+					(1)
+				</td>
+				<td class="packageNumber_rows">
+					2
+				</td>
+
+
+						<th>
+							
+						</th>
+							<th title="edu.gordon.sidecar uses edu.gordon.sidecar">
+								x
+							</th>
+						<th>
+							
+						</th>
+							<th class="cycle" title="edu.gordon.logic has cycle dependency with edu.gordon.sidecar">
+								6C
+							</th> 
+						<th>
+							
+						</th>
+						<th>
+							
+						</th>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.view.html" title="edu.gordon.view" target="" class=""> 
+						edu.gordon.view 
+					</a>
+					(7)
+				</td>
+				<td class="packageNumber_rows">
+					3
+				</td>
+
+
+						<th>
+							
+						</th>
+							<th class="cycle" title="edu.gordon.sidecar has cycle dependency with edu.gordon.view">
+								2C
+							</th> 
+							<th title="edu.gordon.view uses edu.gordon.view">
+								x
+							</th>
+							<th class="cycle" title="edu.gordon.logic has cycle dependency with edu.gordon.view">
+								17C
+							</th> 
+						<th>
+							
+						</th>
+						<th>
+							
+						</th>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.logic.html" title="edu.gordon.logic" target="" class=""> 
+						edu.gordon.logic 
+					</a>
+					(7)
+				</td>
+				<td class="packageNumber_rows">
+					4
+				</td>
+
+
+							<th title="edu.gordon uses edu.gordon.logic">
+								1
+							</th>
+							<th class="cycle" title="edu.gordon.sidecar has cycle dependency with edu.gordon.logic">
+								2C
+							</th> 
+							<th class="cycle" title="edu.gordon.view has cycle dependency with edu.gordon.logic">
+								2C
+							</th> 
+							<th title="edu.gordon.logic uses edu.gordon.logic">
+								x
+							</th>
+							<th class="cycle" title="edu.gordon.sidecar.simulation has cycle dependency with edu.gordon.logic">
+								1C
+							</th> 
+						<th>
+							
+						</th>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.sidecar.simulation.html" title="edu.gordon.sidecar.simulation" target="" class=""> 
+						..don.sidecar.simulation 
+					</a>
+					(14)
+				</td>
+				<td class="packageNumber_rows">
+					5
+				</td>
+
+
+							<th title="edu.gordon uses edu.gordon.sidecar.simulation">
+								1
+							</th>
+						<th>
+							
+						</th>
+							<th class="cycle" title="edu.gordon.view has cycle dependency with edu.gordon.sidecar.simulation">
+								7C
+							</th> 
+							<th class="cycle" title="edu.gordon.logic has cycle dependency with edu.gordon.sidecar.simulation">
+								1C
+							</th> 
+							<th title="edu.gordon.sidecar.simulation uses edu.gordon.sidecar.simulation">
+								x
+							</th>
+						<th>
+							
+						</th>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.data.html" title="edu.gordon.data" target="" class=""> 
+						edu.gordon.data 
+					</a>
+					(7)
+				</td>
+				<td class="packageNumber_rows">
+					6
+				</td>
+
+
+						<th>
+							
+						</th>
+						<th>
+							
+						</th>
+							<th title="edu.gordon.view uses edu.gordon.data">
+								8
+							</th>
+							<th title="edu.gordon.logic uses edu.gordon.data">
+								32
+							</th>
+							<th title="edu.gordon.sidecar.simulation uses edu.gordon.data">
+								13
+							</th>
+							<th title="edu.gordon.data uses edu.gordon.data">
+								x
+							</th>
+			</tr>
+	</table>
+</body>
