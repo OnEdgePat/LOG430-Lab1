@@ -26,26 +26,46 @@
 		<tr>
 			<td></td>
 			<td></td>
-			<td class="packageName_cols" title="EnvelopeAcceptor">1</td>
-			<td class="packageName_cols" title="CashDispenser">2</td>
-			<td class="packageName_cols" title="CardReader">3</td>
-			<td class="packageName_cols" title="CustomerConsole">4</td>
-			<td class="packageName_cols" title="Log">5</td>
-			<td class="packageName_cols" title="OperatorPanel">6</td>
-			<td class="packageName_cols" title="ReceiptPrinter">7</td>
+			<td class="packageName_cols" title="GUI">1</td>
+			<td class="packageName_cols" title="ATMPanel">2</td>
+			<td class="packageName_cols" title="SimKeyboard">3</td>
+			<td class="packageName_cols" title="LogPanel">4</td>
+			<td class="packageName_cols" title="SimReceiptPrinter">5</td>
+			<td class="packageName_cols" title="SimDisplay">6</td>
+			<td class="packageName_cols" title="BillsPanel">7</td>
+			<td class="packageName_cols" title="CardPanel">8</td>
+			<td class="packageName_cols" title="SimCardReader">9</td>
+			<td class="packageName_cols" title="SimCashDispenser">10</td>
+			<td class="packageName_cols" title="SimEnvelopeAcceptor">11</td>
+			<td class="packageName_cols" title="SimOperatorPanel">12</td>
 		</tr>
 
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="EnvelopeAcceptor" class="" />
-					EnvelopeAcceptor
+					<img src="./images/class.png" alt="GUI" class="" />
+					GUI
 				</td>
 				<td class="packageNumber_rows">1</td>
 
 
-							<td title="EnvelopeAcceptor uses EnvelopeAcceptor">
+							<td title="GUI uses GUI">
 								x
 							</td>
+							<td class="cycle" title="ATMPanel has cycle dependency with GUI">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+							<td class="cycle" title="LogPanel has cycle dependency with GUI">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 						<td>
 							
 						</td>
@@ -67,18 +87,33 @@
 			</tr>
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="CashDispenser" class="" />
-					CashDispenser
+					<img src="./images/class.png" alt="ATMPanel" class="" />
+					ATMPanel
 				</td>
 				<td class="packageNumber_rows">2</td>
 
 
+							<td class="cycle" title="GUI has cycle dependency with ATMPanel">
+								2C
+							</td> 
+							<td title="ATMPanel uses ATMPanel">
+								x
+							</td>
 						<td>
 							
 						</td>
-							<td title="CashDispenser uses CashDispenser">
-								x
-							</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="SimReceiptPrinter has cycle dependency with ATMPanel">
+								1C
+							</td> 
+							<td class="cycle" title="SimDisplay has cycle dependency with ATMPanel">
+								1C
+							</td> 
+						<td>
+							
+						</td>
 						<td>
 							
 						</td>
@@ -97,21 +132,36 @@
 			</tr>
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="CardReader" class="" />
-					CardReader
+					<img src="./images/class.png" alt="SimKeyboard" class="" />
+					SimKeyboard
 				</td>
 				<td class="packageNumber_rows">3</td>
 
 
-						<td>
-							
-						</td>
-						<td>
-							
-						</td>
-							<td title="CardReader uses CardReader">
+							<td class="cycle" title="GUI has cycle dependency with SimKeyboard">
+								1C
+							</td> 
+							<td class="cycle" title="ATMPanel has cycle dependency with SimKeyboard">
+								1C
+							</td> 
+							<td title="SimKeyboard uses SimKeyboard">
 								x
 							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 						<td>
 							
 						</td>
@@ -127,13 +177,13 @@
 			</tr>
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="CustomerConsole" class="" />
-					CustomerConsole
+					<img src="./images/class.png" alt="LogPanel" class="" />
+					LogPanel
 				</td>
 				<td class="packageNumber_rows">4</td>
 
 
-							<td class="cycle" title="EnvelopeAcceptor has cycle dependency with CustomerConsole">
+							<td class="cycle" title="GUI has cycle dependency with LogPanel">
 								2C
 							</td> 
 						<td>
@@ -142,9 +192,24 @@
 						<td>
 							
 						</td>
-							<td title="CustomerConsole uses CustomerConsole">
+							<td title="LogPanel uses LogPanel">
 								x
 							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 						<td>
 							
 						</td>
@@ -157,17 +222,17 @@
 			</tr>
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="Log" class="" />
-					Log
+					<img src="./images/class.png" alt="SimReceiptPrinter" class="" />
+					SimReceiptPrinter
 				</td>
 				<td class="packageNumber_rows">5</td>
 
 
-							<td class="cycle" title="EnvelopeAcceptor has cycle dependency with Log">
-								3C
+							<td class="cycle" title="GUI has cycle dependency with SimReceiptPrinter">
+								1C
 							</td> 
-							<td class="cycle" title="CashDispenser has cycle dependency with Log">
-								3C
+							<td class="cycle" title="ATMPanel has cycle dependency with SimReceiptPrinter">
+								1C
 							</td> 
 						<td>
 							
@@ -175,9 +240,24 @@
 						<td>
 							
 						</td>
-							<td title="Log uses Log">
+							<td title="SimReceiptPrinter uses SimReceiptPrinter">
 								x
 							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 						<td>
 							
 						</td>
@@ -187,12 +267,30 @@
 			</tr>
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="OperatorPanel" class="" />
-					OperatorPanel
+					<img src="./images/class.png" alt="SimDisplay" class="" />
+					SimDisplay
 				</td>
 				<td class="packageNumber_rows">6</td>
 
 
+							<td class="cycle" title="GUI has cycle dependency with SimDisplay">
+								1C
+							</td> 
+							<td class="cycle" title="ATMPanel has cycle dependency with SimDisplay">
+								1C
+							</td> 
+							<td class="cycle" title="SimKeyboard has cycle dependency with SimDisplay">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="SimDisplay uses SimDisplay">
+								x
+							</td>
 						<td>
 							
 						</td>
@@ -208,7 +306,229 @@
 						<td>
 							
 						</td>
-							<td title="OperatorPanel uses OperatorPanel">
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="BillsPanel" class="" />
+					BillsPanel
+				</td>
+				<td class="packageNumber_rows">7</td>
+
+
+							<td title="GUI uses BillsPanel">
+								2
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="BillsPanel uses BillsPanel">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="CardPanel" class="" />
+					CardPanel
+				</td>
+				<td class="packageNumber_rows">8</td>
+
+
+							<td title="GUI uses CardPanel">
+								2
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="CardPanel uses CardPanel">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="SimCardReader" class="" />
+					SimCardReader
+				</td>
+				<td class="packageNumber_rows">9</td>
+
+
+							<td class="cycle" title="GUI has cycle dependency with SimCardReader">
+								1C
+							</td> 
+							<td class="cycle" title="ATMPanel has cycle dependency with SimCardReader">
+								1C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="SimCardReader uses SimCardReader">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="SimCashDispenser" class="" />
+					SimCashDispenser
+				</td>
+				<td class="packageNumber_rows">10</td>
+
+
+							<td title="GUI uses SimCashDispenser">
+								1
+							</td>
+							<td title="ATMPanel uses SimCashDispenser">
+								1
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="SimCashDispenser uses SimCashDispenser">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="SimEnvelopeAcceptor" class="" />
+					SimEnvelopeAcceptor
+				</td>
+				<td class="packageNumber_rows">11</td>
+
+
+							<td title="GUI uses SimEnvelopeAcceptor">
+								1
+							</td>
+							<td title="ATMPanel uses SimEnvelopeAcceptor">
+								2
+							</td>
+							<td title="SimKeyboard uses SimEnvelopeAcceptor">
+								2
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="SimEnvelopeAcceptor uses SimEnvelopeAcceptor">
 								x
 							</td>
 						<td>
@@ -217,12 +537,18 @@
 			</tr>
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="ReceiptPrinter" class="" />
-					ReceiptPrinter
+					<img src="./images/class.png" alt="SimOperatorPanel" class="" />
+					SimOperatorPanel
 				</td>
-				<td class="packageNumber_rows">7</td>
+				<td class="packageNumber_rows">12</td>
 
 
+							<td class="cycle" title="GUI has cycle dependency with SimOperatorPanel">
+								1C
+							</td> 
+							<td class="cycle" title="ATMPanel has cycle dependency with SimOperatorPanel">
+								2C
+							</td> 
 						<td>
 							
 						</td>
@@ -241,7 +567,16 @@
 						<td>
 							
 						</td>
-							<td title="ReceiptPrinter uses ReceiptPrinter">
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="SimOperatorPanel uses SimOperatorPanel">
 								x
 							</td>
 			</tr>

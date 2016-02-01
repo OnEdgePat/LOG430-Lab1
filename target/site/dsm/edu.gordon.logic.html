@@ -27,12 +27,21 @@
 			<td></td>
 			<td></td>
 			<td class="packageName_cols" title="Deposit">1</td>
-			<td class="packageName_cols" title="Inquiry">2</td>
-			<td class="packageName_cols" title="Transfer">3</td>
-			<td class="packageName_cols" title="Withdrawal">4</td>
+			<td class="packageName_cols" title="Withdrawal">2</td>
+			<td class="packageName_cols" title="Inquiry">3</td>
+			<td class="packageName_cols" title="Transfer">4</td>
 			<td class="packageName_cols" title="Transaction">5</td>
 			<td class="packageName_cols" title="ATM">6</td>
-			<td class="packageName_cols" title="NetworkToBank">7</td>
+			<td class="packageName_cols" title="EnvelopeAcceptor">7</td>
+			<td class="packageName_cols" title="OperatorPanel">8</td>
+			<td class="packageName_cols" title="Session">9</td>
+			<td class="packageName_cols" title="CashDispenser">10</td>
+			<td class="packageName_cols" title="NetworkToBank">11</td>
+			<td class="packageName_cols" title="CardReader">12</td>
+			<td class="packageName_cols" title="CustomerConsole">13</td>
+			<td class="packageName_cols" title="Log">14</td>
+			<td class="packageName_cols" title="ReceiptPrinter">15</td>
+			<td class="packageName_cols" title="SimulatedBank">16</td>
 		</tr>
 
 			<tr>
@@ -64,11 +73,38 @@
 						<td>
 							
 						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 			</tr>
 			<tr>
 				<td class="packageName_rows">
-					<img src="./images/class.png" alt="Inquiry" class="" />
-					Inquiry
+					<img src="./images/class.png" alt="Withdrawal" class="" />
+					Withdrawal
 				</td>
 				<td class="packageNumber_rows">2</td>
 
@@ -76,12 +112,69 @@
 						<td>
 							
 						</td>
-							<td title="Inquiry uses Inquiry">
+							<td title="Withdrawal uses Withdrawal">
 								x
 							</td>
 						<td>
 							
 						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="Transaction has cycle dependency with Withdrawal">
+								1C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="Inquiry" class="" />
+					Inquiry
+				</td>
+				<td class="packageNumber_rows">3</td>
+
+
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="Inquiry uses Inquiry">
+								x
+							</td>
 						<td>
 							
 						</td>
@@ -94,41 +187,38 @@
 						<td>
 							
 						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 			</tr>
 			<tr>
 				<td class="packageName_rows">
 					<img src="./images/class.png" alt="Transfer" class="" />
 					Transfer
-				</td>
-				<td class="packageNumber_rows">3</td>
-
-
-						<td>
-							
-						</td>
-						<td>
-							
-						</td>
-							<td title="Transfer uses Transfer">
-								x
-							</td>
-						<td>
-							
-						</td>
-							<td class="cycle" title="Transaction has cycle dependency with Transfer">
-								1C
-							</td> 
-						<td>
-							
-						</td>
-						<td>
-							
-						</td>
-			</tr>
-			<tr>
-				<td class="packageName_rows">
-					<img src="./images/class.png" alt="Withdrawal" class="" />
-					Withdrawal
 				</td>
 				<td class="packageNumber_rows">4</td>
 
@@ -142,12 +232,39 @@
 						<td>
 							
 						</td>
-							<td title="Withdrawal uses Withdrawal">
+							<td title="Transfer uses Transfer">
 								x
 							</td>
-							<td class="cycle" title="Transaction has cycle dependency with Withdrawal">
+							<td class="cycle" title="Transaction has cycle dependency with Transfer">
 								1C
 							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 						<td>
 							
 						</td>
@@ -166,18 +283,45 @@
 							<td class="cycle" title="Deposit has cycle dependency with Transaction">
 								2C
 							</td> 
+							<td class="cycle" title="Withdrawal has cycle dependency with Transaction">
+								2C
+							</td> 
 							<td class="cycle" title="Inquiry has cycle dependency with Transaction">
 								2C
 							</td> 
 							<td class="cycle" title="Transfer has cycle dependency with Transaction">
 								2C
 							</td> 
-							<td class="cycle" title="Withdrawal has cycle dependency with Transaction">
-								2C
-							</td> 
 							<td title="Transaction uses Transaction">
 								x
 							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="Session has cycle dependency with Transaction">
+								2C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 						<td>
 							
 						</td>
@@ -196,13 +340,13 @@
 							<td class="cycle" title="Deposit has cycle dependency with ATM">
 								2C
 							</td> 
+							<td class="cycle" title="Withdrawal has cycle dependency with ATM">
+								2C
+							</td> 
 							<td class="cycle" title="Inquiry has cycle dependency with ATM">
 								2C
 							</td> 
 							<td class="cycle" title="Transfer has cycle dependency with ATM">
-								2C
-							</td> 
-							<td class="cycle" title="Withdrawal has cycle dependency with ATM">
 								2C
 							</td> 
 							<td class="cycle" title="Transaction has cycle dependency with ATM">
@@ -214,13 +358,268 @@
 						<td>
 							
 						</td>
+							<td class="cycle" title="OperatorPanel has cycle dependency with ATM">
+								2C
+							</td> 
+							<td class="cycle" title="Session has cycle dependency with ATM">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="CardReader has cycle dependency with ATM">
+								2C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="EnvelopeAcceptor" class="" />
+					EnvelopeAcceptor
+				</td>
+				<td class="packageNumber_rows">7</td>
+
+
+							<td class="cycle" title="Deposit has cycle dependency with EnvelopeAcceptor">
+								1C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="ATM has cycle dependency with EnvelopeAcceptor">
+								3C
+							</td> 
+							<td title="EnvelopeAcceptor uses EnvelopeAcceptor">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="OperatorPanel" class="" />
+					OperatorPanel
+				</td>
+				<td class="packageNumber_rows">8</td>
+
+
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="ATM has cycle dependency with OperatorPanel">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+							<td title="OperatorPanel uses OperatorPanel">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="Session" class="" />
+					Session
+				</td>
+				<td class="packageNumber_rows">9</td>
+
+
+							<td class="cycle" title="Deposit has cycle dependency with Session">
+								1C
+							</td> 
+							<td class="cycle" title="Withdrawal has cycle dependency with Session">
+								1C
+							</td> 
+							<td class="cycle" title="Inquiry has cycle dependency with Session">
+								1C
+							</td> 
+							<td class="cycle" title="Transfer has cycle dependency with Session">
+								1C
+							</td> 
+							<td class="cycle" title="Transaction has cycle dependency with Session">
+								4C
+							</td> 
+							<td class="cycle" title="ATM has cycle dependency with Session">
+								1C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="Session uses Session">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="CashDispenser" class="" />
+					CashDispenser
+				</td>
+				<td class="packageNumber_rows">10</td>
+
+
+						<td>
+							
+						</td>
+							<td class="cycle" title="Withdrawal has cycle dependency with CashDispenser">
+								1C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="ATM has cycle dependency with CashDispenser">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="CashDispenser uses CashDispenser">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 			</tr>
 			<tr>
 				<td class="packageName_rows">
 					<img src="./images/class.png" alt="NetworkToBank" class="" />
 					NetworkToBank
 				</td>
-				<td class="packageNumber_rows">7</td>
+				<td class="packageNumber_rows">11</td>
 
 
 							<td class="cycle" title="Deposit has cycle dependency with NetworkToBank">
@@ -241,7 +640,319 @@
 							<td class="cycle" title="ATM has cycle dependency with NetworkToBank">
 								3C
 							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
 							<td title="NetworkToBank uses NetworkToBank">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="CardReader" class="" />
+					CardReader
+				</td>
+				<td class="packageNumber_rows">12</td>
+
+
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="Transaction has cycle dependency with CardReader">
+								1C
+							</td> 
+							<td class="cycle" title="ATM has cycle dependency with CardReader">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="Session has cycle dependency with CardReader">
+								1C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="CardReader uses CardReader">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="CustomerConsole" class="" />
+					CustomerConsole
+				</td>
+				<td class="packageNumber_rows">13</td>
+
+
+							<td class="cycle" title="Deposit has cycle dependency with CustomerConsole">
+								2C
+							</td> 
+							<td class="cycle" title="Withdrawal has cycle dependency with CustomerConsole">
+								2C
+							</td> 
+							<td class="cycle" title="Inquiry has cycle dependency with CustomerConsole">
+								2C
+							</td> 
+							<td class="cycle" title="Transfer has cycle dependency with CustomerConsole">
+								2C
+							</td> 
+							<td class="cycle" title="Transaction has cycle dependency with CustomerConsole">
+								2C
+							</td> 
+							<td class="cycle" title="ATM has cycle dependency with CustomerConsole">
+								3C
+							</td> 
+							<td class="cycle" title="EnvelopeAcceptor has cycle dependency with CustomerConsole">
+								2C
+							</td> 
+						<td>
+							
+						</td>
+							<td class="cycle" title="Session has cycle dependency with CustomerConsole">
+								2C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="CustomerConsole uses CustomerConsole">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="Log" class="" />
+					Log
+				</td>
+				<td class="packageNumber_rows">14</td>
+
+
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="ATM has cycle dependency with Log">
+								3C
+							</td> 
+							<td class="cycle" title="EnvelopeAcceptor has cycle dependency with Log">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="CashDispenser has cycle dependency with Log">
+								3C
+							</td> 
+							<td class="cycle" title="NetworkToBank has cycle dependency with Log">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="Log uses Log">
+								x
+							</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="ReceiptPrinter" class="" />
+					ReceiptPrinter
+				</td>
+				<td class="packageNumber_rows">15</td>
+
+
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td class="cycle" title="Transaction has cycle dependency with ReceiptPrinter">
+								1C
+							</td> 
+							<td class="cycle" title="ATM has cycle dependency with ReceiptPrinter">
+								3C
+							</td> 
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="ReceiptPrinter uses ReceiptPrinter">
+								x
+							</td>
+						<td>
+							
+						</td>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/class.png" alt="SimulatedBank" class="" />
+					SimulatedBank
+				</td>
+				<td class="packageNumber_rows">16</td>
+
+
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+							<td title="SimulatedBank uses SimulatedBank">
 								x
 							</td>
 			</tr>

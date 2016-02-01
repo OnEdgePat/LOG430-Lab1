@@ -25,11 +25,10 @@
 			<td></td>
 			<td></td> 
 			<td class="packageName_cols" title="edu.gordon">1</td> 
-			<td class="packageName_cols" title="edu.gordon.sidecar">2</td> 
-			<td class="packageName_cols" title="edu.gordon.view">3</td> 
-			<td class="packageName_cols" title="edu.gordon.logic">4</td> 
-			<td class="packageName_cols" title="edu.gordon.sidecar.simulation">5</td> 
-			<td class="packageName_cols" title="edu.gordon.data">6</td> 
+			<td class="packageName_cols" title="edu.gordon.view">2</td> 
+			<td class="packageName_cols" title="edu.gordon.logic">3</td> 
+			<td class="packageName_cols" title="edu.gordon.sidecar">4</td> 
+			<td class="packageName_cols" title="edu.gordon.data">5</td> 
 		</tr>
 
 
@@ -61,6 +60,61 @@
 						<th>
 							
 						</th>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.view.html" title="edu.gordon.view" target="" class=""> 
+						edu.gordon.view 
+					</a>
+					(12)
+				</td>
+				<td class="packageNumber_rows">
+					2
+				</td>
+
+
+						<th>
+							
+						</th>
+							<th title="edu.gordon.view uses edu.gordon.view">
+								x
+							</th>
+						<th>
+							
+						</th>
+							<th class="cycle" title="edu.gordon.sidecar has cycle dependency with edu.gordon.view">
+								8C
+							</th> 
+						<th>
+							
+						</th>
+			</tr>
+			<tr>
+				<td class="packageName_rows">
+					<img src="./images/package.png"	alt="" class="" /> 
+					<a href="edu.gordon.logic.html" title="edu.gordon.logic" target="" class=""> 
+						edu.gordon.logic 
+					</a>
+					(16)
+				</td>
+				<td class="packageNumber_rows">
+					3
+				</td>
+
+
+							<th title="edu.gordon uses edu.gordon.logic">
+								1
+							</th>
+						<th>
+							
+						</th>
+							<th title="edu.gordon.logic uses edu.gordon.logic">
+								x
+							</th>
+							<th class="cycle" title="edu.gordon.sidecar has cycle dependency with edu.gordon.logic">
+								2C
+							</th> 
 						<th>
 							
 						</th>
@@ -74,119 +128,20 @@
 					(1)
 				</td>
 				<td class="packageNumber_rows">
-					2
-				</td>
-
-
-						<th>
-							
-						</th>
-							<th title="edu.gordon.sidecar uses edu.gordon.sidecar">
-								x
-							</th>
-						<th>
-							
-						</th>
-							<th class="cycle" title="edu.gordon.logic has cycle dependency with edu.gordon.sidecar">
-								6C
-							</th> 
-						<th>
-							
-						</th>
-						<th>
-							
-						</th>
-			</tr>
-			<tr>
-				<td class="packageName_rows">
-					<img src="./images/package.png"	alt="" class="" /> 
-					<a href="edu.gordon.view.html" title="edu.gordon.view" target="" class=""> 
-						edu.gordon.view 
-					</a>
-					(7)
-				</td>
-				<td class="packageNumber_rows">
-					3
-				</td>
-
-
-						<th>
-							
-						</th>
-							<th class="cycle" title="edu.gordon.sidecar has cycle dependency with edu.gordon.view">
-								2C
-							</th> 
-							<th title="edu.gordon.view uses edu.gordon.view">
-								x
-							</th>
-							<th class="cycle" title="edu.gordon.logic has cycle dependency with edu.gordon.view">
-								17C
-							</th> 
-						<th>
-							
-						</th>
-						<th>
-							
-						</th>
-			</tr>
-			<tr>
-				<td class="packageName_rows">
-					<img src="./images/package.png"	alt="" class="" /> 
-					<a href="edu.gordon.logic.html" title="edu.gordon.logic" target="" class=""> 
-						edu.gordon.logic 
-					</a>
-					(7)
-				</td>
-				<td class="packageNumber_rows">
 					4
 				</td>
 
 
-							<th title="edu.gordon uses edu.gordon.logic">
+							<th title="edu.gordon uses edu.gordon.sidecar">
 								1
 							</th>
-							<th class="cycle" title="edu.gordon.sidecar has cycle dependency with edu.gordon.logic">
-								2C
+							<th class="cycle" title="edu.gordon.view has cycle dependency with edu.gordon.sidecar">
+								3C
 							</th> 
-							<th class="cycle" title="edu.gordon.view has cycle dependency with edu.gordon.logic">
-								2C
+							<th class="cycle" title="edu.gordon.logic has cycle dependency with edu.gordon.sidecar">
+								8C
 							</th> 
-							<th title="edu.gordon.logic uses edu.gordon.logic">
-								x
-							</th>
-							<th class="cycle" title="edu.gordon.sidecar.simulation has cycle dependency with edu.gordon.logic">
-								1C
-							</th> 
-						<th>
-							
-						</th>
-			</tr>
-			<tr>
-				<td class="packageName_rows">
-					<img src="./images/package.png"	alt="" class="" /> 
-					<a href="edu.gordon.sidecar.simulation.html" title="edu.gordon.sidecar.simulation" target="" class=""> 
-						..don.sidecar.simulation 
-					</a>
-					(14)
-				</td>
-				<td class="packageNumber_rows">
-					5
-				</td>
-
-
-							<th title="edu.gordon uses edu.gordon.sidecar.simulation">
-								1
-							</th>
-						<th>
-							
-						</th>
-							<th class="cycle" title="edu.gordon.view has cycle dependency with edu.gordon.sidecar.simulation">
-								7C
-							</th> 
-							<th class="cycle" title="edu.gordon.logic has cycle dependency with edu.gordon.sidecar.simulation">
-								1C
-							</th> 
-							<th title="edu.gordon.sidecar.simulation uses edu.gordon.sidecar.simulation">
+							<th title="edu.gordon.sidecar uses edu.gordon.sidecar">
 								x
 							</th>
 						<th>
@@ -202,24 +157,21 @@
 					(7)
 				</td>
 				<td class="packageNumber_rows">
-					6
+					5
 				</td>
 
 
 						<th>
 							
 						</th>
-						<th>
-							
-						</th>
 							<th title="edu.gordon.view uses edu.gordon.data">
-								8
+								3
 							</th>
 							<th title="edu.gordon.logic uses edu.gordon.data">
-								32
+								45
 							</th>
-							<th title="edu.gordon.sidecar.simulation uses edu.gordon.data">
-								13
+							<th title="edu.gordon.sidecar uses edu.gordon.data">
+								5
 							</th>
 							<th title="edu.gordon.data uses edu.gordon.data">
 								x
